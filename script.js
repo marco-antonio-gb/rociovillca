@@ -18,7 +18,7 @@ function Firefly(){
   
   
   this.angle_of_attack = Math.atan2(  this.y - center_y ,  this.x - center_x);
-  this.vel =  ( Math.random() * 5 ) + 150 ;
+  this.vel =  ( Math.random() * 5 ) + 250 ;
   
   this.color = colors[ ~~(colors.length * Math.random()) ]
   
@@ -97,7 +97,7 @@ function render(){
 
 render();
 
-// 
+
 function isOnHeart(x,y){
 	  x = ((x - center_x) / (min_distance * 1.2)) * 1.8;
 	  y = ((y - center_y) / (min_distance)) * - 1.8;
@@ -107,6 +107,10 @@ function isOnHeart(x,y){
     // Simplest Equation of lurve
     return (Math.pow((x2 + y2 - 1), 3) - (x2 * (y2 * y)) <= 0);
 }
+
+
+// PARTICLES CODE
+
 document.addEventListener("click", event => {
     bursty(event.pageX, event.pageY);
   });
@@ -118,11 +122,11 @@ document.addEventListener("click", event => {
       left: 0,
       top: 0,
       radius: { 0: 200 },
-      count: 20,
+      count: 30,
       degree: 360,
       children: {
-        fill: { '#F666A1': '#D82E44' },
-        duration: 2000 } }).
+        fill: { '#f5429e': '#D82E44' },
+        duration: 1900 } }).
   
     tune({
       x: x,
@@ -143,7 +147,7 @@ document.addEventListener("click", event => {
       degree: 360,
       children: {
         fill: { '#F666A1': "#D82E44" },
-        duration: 2000 } }).
+        duration: 1800 } }).
   
     tune({
       x: randomX,

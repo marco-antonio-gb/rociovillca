@@ -29,8 +29,26 @@
   text-align: center;
 }
 
+.autor {
+  font-size: 12px;
+  color: rgb(241, 235, 235);
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.texto {
+    max-width: 300px;
+    margin: auto;
+  font-size: 20px;
+  
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+
 .cover {
-  background: rgba(228, 113, 122, 0.82);
+  background: rgba(228, 113, 122, 0.85);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -58,7 +76,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: #fadde1;
+  /* background: #fadde1; */
   overflow: hidden;
   cursor: pointer;
 }
@@ -76,7 +94,7 @@ a {
 }
 
 body {
-  background: url("./img/rocio.jpg");
+  background: url("./img/rocio_back_2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
